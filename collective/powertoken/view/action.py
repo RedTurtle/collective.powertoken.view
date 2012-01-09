@@ -23,6 +23,11 @@ class ViewActionProvider(object):
         view = action.params.get('view')
         cmfcallable = action.params.get('cmfcallable')
         context = aq_inner(self.context)
+        
+        if action.params.get('setToRequest'):
+            for k,v in action.params['setToRequest'].items():
+                context.REQUEST.set(k, v)
+        
         if view:
             view_to_call = getMultiAdapter((context, context.REQUEST), name=view)
             view_to_call = view_to_call.__of__(context)

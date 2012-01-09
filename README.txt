@@ -29,6 +29,9 @@ Parameters
     Call a different Zope view on the context, not the current or default ones.
 ``cmfcallable``
     Call a CMF Template/skins resource on the context
+``setToRequest``
+    A dict with additional values to set in the request. For example you can set ``disable_border``, or
+    (only for Plone 4) ``disable_plone.leftcolumn`` and ``disable_plone.rightcolumn``.
 
 Both parameter are not mandatory. Providing none of theme will call the content default view.
 

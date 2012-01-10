@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from Acquisition import aq_inner, aq_base, aq_acquire
+from Acquisition import aq_inner
 from zope.interface import implements
 from zope.component import getMultiAdapter
 
-from Products.CMFCore.utils import getToolByName
 from collective.powertoken.core.interfaces import IPowerActionProvider
-from collective.powertoken.core.exceptions import PowerTokenConfigurationError
 
 class ViewActionProvider(object):
     """

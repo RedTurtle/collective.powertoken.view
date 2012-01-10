@@ -1,18 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from zope.component import getUtility
-from zope.annotation.interfaces import IAnnotations
-
-from zope.component import provideAdapter
-from zope.component import getGlobalSiteManager
-
-from zope.publisher.interfaces.browser import IHTTPRequest
 
 from AccessControl import Unauthorized
-from Products.CMFCore.interfaces import IContentish
 
 from collective.powertoken.core.interfaces import IPowerTokenUtility
-from collective.powertoken.core.exceptions import PowerTokenConfigurationError
 
 from collective.powertoken.view.tests.base import TestCase
 

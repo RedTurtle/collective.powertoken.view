@@ -40,3 +40,12 @@ Use case
 
 * You can view a document, regardless of it's review state and your roles in the site.
 * You can call a view on a context, overriding the user security permission.
+
+Authors
+=======
+
+This product was developed by RedTurtle Technology team.
+
+.. image:: http://www.redturtle.it/redturtle_banner.png
+   :alt: RedTurtle Technology Site
+   :target: http://www.redturtle.it/

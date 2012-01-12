@@ -33,7 +33,8 @@ Parameters
     A dict with additional values to set in the request. For example you can set ``disable_border``, or
     (only for Plone 4) ``disable_plone.leftcolumn`` and ``disable_plone.rightcolumn``.
 
-Both parameter are not mandatory. Providing none of theme will call the content default view.
+All parameters are not mandatory. Providing none of theme will call the content default view, without addind
+anything new to the request.
 
 Use case
 ========

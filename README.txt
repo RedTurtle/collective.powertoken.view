@@ -14,7 +14,7 @@ Add this product to your Plone installation, then you will be able to register P
 >>> from collective.powertoken.core.interfaces import IPowerTokenUtility
 >>> utility = getUtility(IPowerTokenUtility)
 >>> token = utility.enablePowerToken(document, 'view.viewDocument')
->>> results = utility.consumeAction(document, token)
+>>> results = utility.consumeActions(document, token)
 >>> print results
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" ...
 ...

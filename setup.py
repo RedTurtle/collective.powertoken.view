@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-tests_require = ['zope.testing', 'Products.PloneTestCase']
-
+tests_require = ['interlude', 'plone.app.testing', 'plone.app.robotframework']
 version = '0.1.0'
 
 setup(name='collective.powertoken.view',
@@ -14,14 +13,12 @@ setup(name='collective.powertoken.view',
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
-        "Framework :: Plone :: 3.3",
-        "Framework :: Plone :: 4.0",
-        "Framework :: Plone :: 4.1",
-        "Framework :: Zope2",
+        "Framework :: Plone :: 5.2",
         "Framework :: Zope3",
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python",
+        "Programming Language :: Python 3.8",
         ],
       keywords='plone security token plonegov view access',
       author='RedTurtle Technology',

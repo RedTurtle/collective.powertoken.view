@@ -3,12 +3,13 @@
     xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="collective.powertoken.view">
 
-	<include package="collective.powertoken.core" />
-	
-    <adapter for="Products.CMFCore.interfaces.IContentish
-	              zope.publisher.interfaces.browser.IBrowserRequest"
-       provides="collective.powertoken.core.interfaces.IPowerActionProvider"
-       factory=".action.ViewActionProvider"
-	   name="view.viewDocument" />
+  <include package="collective.powertoken.core" />
+
+  <adapter
+    for="Products.CMFCore.interfaces.IContentish
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    provides="collective.powertoken.core.interfaces.IPowerActionProvider"
+    factory=".action.ViewActionProvider"
+    name="view.viewDocument" />
 
 </configure>

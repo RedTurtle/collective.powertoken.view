@@ -1,0 +1,11 @@
+<div>
+
+  <h1 tal:content="context/title" />
+
+  <div tal:content="structure context/text/raw" />
+
+  <ul tal:repeat="k python:request.keys()" >
+    <li tal:content="python:'%s=%s'%(k,request[k])" />
+  </ul>
+
+</div>
